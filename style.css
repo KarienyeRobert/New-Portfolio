@@ -40,7 +40,7 @@ html{
 }
 
 body{
-    background-color: var(--background-color);
+   background: var(--background-color);
     color: var(--text-color);
 }
 
@@ -102,9 +102,11 @@ nav a:hover{
 }
 
 .home{
-    display: flex;
-    align-items: center;
+    height: 100vh;
+    padding-top: 100px;
 }
+
+
 .home .home-content{
     padding: 100px 5px 0 5px;
     max-width: 44rem;
@@ -140,12 +142,16 @@ nav a:hover{
     transition: 0.5s ease;
 }
 
-.social-media a:hover{
-    box-shadow: none;
-    background: var(--btn-color);
+.social-media a i{
+    background: none;
+    color: var(--btn-color);
 }
 
-.btn,
+.social-media a:hover{
+    box-shadow: none;
+    background: var(--color-white);
+}
+
 .button{
     display: inline-block;
     padding: 1.2rem 2.8rem;
@@ -160,8 +166,13 @@ nav a:hover{
     font-weight: 600;
 }
 
-.btn:hover{
+.button a{
+    background: none;
+}
+
+.button:hover{
     box-shadow: none;
+    background: var(--color-white);
     color: var(--color-success);
 }
 
@@ -170,15 +181,106 @@ nav a:hover{
     color: var(--color-success);
 }
 
-.home .container{
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    width: 700px;
-    height: 700px;
-    overflow: hidden;
-    pointer-events: none;
+
+
+.home-img img{
+    height: 15rem;
+    margin-left: 750px;
+    margin-top: -950px;
+}
+
+/* about section  */
+.about-container{
+    padding-top: 120px;
+    margin: 5px;
+}
+
+.about h2{
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.about span{
+    color: var(--color-success);
+}
+
+.about img{
+    float: inline-start;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 5cm;
+    padding: 0 5px 5px 0;
+}
+
+.about p{
+    font-size: 1.6rem;
+
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+}
+
+.skills h4{
+    font-size: 1.2rem;
+    text-align: center;
+    background: none;
+}
+
+.skills span{
+    background: none;
+}
+
+
+
+.skills .box {
+    box-sizing: border-box;
+    border: 1px solid #161212;
+    border-radius: 10px;
+    width: 400px;
+    margin: 5px;
+}
+
+.skills .html{
+    background-color: teal;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.skills .css {
+    background-color: teal;
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.skills .js {
+    background-color: teal;
+    width: 30%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.skills .c {
+    background-color: teal;
+    width: 45%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.skills .react {
+    background-color: var(--color-neutral);
+    width: 5%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
 }
 
 
