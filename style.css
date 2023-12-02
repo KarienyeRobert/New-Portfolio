@@ -517,60 +517,93 @@ nav a:hover{
 
 /* contact section  */
 
-.contact{
-    padding-top: 150px;
-    margin: 10px;
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: transparent;
+    margin-top: -170px;
 }
 
-.contact-container h2{
-    margin-bottom: .3rem;
-    font-size: 2.2rem;
+#contact h2{
+    font-size: 40px;
+    color: var(--text-color);
     text-align: center;
+    padding: 100px;
 }
 
-.contact-container span{
+#contact span{
     color: var(--color-success);
 }
 
-.contact-container form{
-    max-width: 80rem;
-    margin: .1rem auto;
+.contact form{
+    width: 600px;
     text-align: center;
-    margin-bottom: .3rem;
 }
 
-.contact-container form .contact-info{
+form .input-box{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
-.contact form .contact-info input,
-.contact form   textarea{
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
-    color: var(--text-color);
-    background: transparent;
-    border-radius: 25px;
-    margin: .7rem 0;
-    box-shadow: 0 .1rem .5rem var(--shadow-color);
-}
-
-.contact form .contact-info input{
+.input-box .input-field{
     width: 45%;
 }
 
-.contact form   textarea{
+.field .item{
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid var(--color-success);
+    outline: none;
+    border-radius: var(--border-radius-1);
+    color: var(--text-color);
+    margin: 12px 0;
+}
+
+form .textarea-field .item{
     resize: none;
 }
 
-.contact form .btn{
-    margin-top: .2rem;
+form button{
+    padding: 12px 32px;
+    background: var(--color-success);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px var(--color-success);
+    font-size: 16px;
+    color: var(--text-color);
+    letter-spacing: 1px;
+    font-weight: 600;
     cursor: pointer;
-    padding: 5px;
-    background: var(--color-neutral);
-    border-radius: var(--border-radius-2);
+    margin-top: 20px;
+    transition: .5s;
+}
+
+form button:hover{
+    box-shadow: none; 
+}
+
+.field.error .item{
+    border-color: #d93025;
+}
+
+.field .error-txt{
+    font-size:14.5px ;
+    color: #d93025;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+
+.field.error .error-txt{
+    display: block;
+}
+
+form .textarea-field .error-txt{
+    margin-top: -10px;
 }
 
 

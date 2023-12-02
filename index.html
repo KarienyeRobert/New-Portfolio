@@ -256,27 +256,44 @@
     
     </section>
 
-    <!-- contact section  -->
+
+    <!--contact section-->
 
     <section id="contact">
+     <h2>Contact <span>Me!</span></h2>
       <div class="contact">
-        <div class="contact-container">
-            <h2>Contact <span>Me!!</span></h2>
-            <form action="#">
-              <div class="contact-info">
-                <input type="text" placeholder="Full Name">
-                <input type="tel"placeholder="Phone Number">
-              </div>
-              <div class="contact-info">
-                <input type="email"placeholder="Your Email Address">
-                <input type="text"placeholder="Email Subject">
-              </div>
-              <textarea name="message" id="text-area" cols="20" rows="9"placeholder="Your Message"></textarea>
-              <input type="button"class="btn"value="Send Message">
-            </form>
-        </div>
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="on">
+                    <div class="error-txt">Full Name can't be blank!!</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Email Address " id="email" class="item"autocomplete="on">
+                    <div class="error-txt email">Email Address can't be blank!!</div>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="tel" placeholder="Phone Number " id="phone" class="item" autocomplete="on">
+                    <div class="error-txt">Phone Number can't be blank!!</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Subject " id="subject" class="item" autocomplete="on">
+                    <div class="error-txt">Subject can't be blank!!</div>
+                </div>
+            </div>
+
+            <div class="textarea-field field">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item"></textarea>
+                <div class="error-txt">Message can't be blank!!</div>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
       </div>
     </section>
+
 
     <!-- footer section  -->
 
@@ -294,6 +311,13 @@
         </div>
     </footer>
 
+
+    <!-- smtp js  -->
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+    <!-- sweetalert2 js for success message popup -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
      <!--swiper js-->
    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
