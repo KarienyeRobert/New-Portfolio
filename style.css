@@ -14,14 +14,15 @@
 
 :root{
     --background-color:#E0E1DF;
-    --text-color:#161212;
-    --color-success:#90DE0A;
+    --text-color:#1A2238;
+    --color-success:#259B9A;
     --color-danger:#5E0E0E;
-    --color-neutral:#997F0E;
+    --color-neutral:#A0AECD;
     --color-white:#ffe;
-    --btn-color:purple;
+    --btn-color:#161F6D;
     --color-dark:#111;
     --shadow-color:#93928D;
+    --bg-color:#F7F7F7;
 
     --border-radius-1:10px;
     --border-radius-2:25px;
@@ -48,6 +49,7 @@ body{
 .navbar{
     width: 1255px;
     position: fixed;
+    
 }
 
 .navbar .logo{
@@ -99,16 +101,17 @@ nav a:hover{
 
 #home{
     display: grid;
+    background: var(--bg-color);
 }
 
 .home{
-    height: 100vh;
-    padding-top: 100px;
+    height: 90vh;
+    
 }
 
 
 .home .home-content{
-    padding: 100px 5px 0 5px;
+    padding: 170px 5px 0 25px;
     max-width: 44rem;
 }
 
@@ -176,17 +179,12 @@ nav a:hover{
     color: var(--color-success);
 }
 
-.button:hover{
-    box-shadow: none;
-    color: var(--color-success);
-}
-
-
-
 .home-img img{
-    height: 15rem;
-    margin-left: 750px;
-    margin-top: -950px;
+    height: 20rem;
+    width: 20rem;
+    margin-left: 850px;
+    margin-top: -1150px;
+    border-radius: 50%;
 }
 
 /* about section  */
@@ -207,10 +205,13 @@ nav a:hover{
 .about img{
     float: inline-start;
     position: relative;
+    margin-top: 70px;
     align-items: center;
     justify-content: center;
-    height: 5cm;
-    padding: 0 5px 5px 0;
+    height: 7cm;
+    width: 7cm;
+    border-radius: 50%;
+    padding: 0 10px 5px 0;
 }
 
 .about p{
@@ -238,23 +239,23 @@ nav a:hover{
 .skills .box {
     box-sizing: border-box;
     border: 1px solid #161212;
-    border-radius: 10px;
+    border-radius: var(--border-radius-2);
     width: 400px;
     margin: 5px;
 }
 
 .skills .html{
-    background-color: teal;
+    background-color: green;
     width: 80%;
-    border-radius: 10px;
+    border-radius: var(--border-radius-2);
     text-align: center;
     padding: 10px;
 }
 
 .skills .css {
-    background-color: teal;
+    background-color: green;
     width: 50%;
-    border-radius: 10px;
+    border-radius: var(--border-radius-2);
     text-align: center;
     padding: 10px;
 }
@@ -262,7 +263,7 @@ nav a:hover{
 .skills .js {
     background-color: teal;
     width: 30%;
-    border-radius: 10px;
+    border-radius: var(--border-radius-2);
     text-align: center;
     padding: 10px;
 }
@@ -270,7 +271,7 @@ nav a:hover{
 .skills .c {
     background-color: teal;
     width: 45%;
-    border-radius: 10px;
+    border-radius: var(--border-radius-2);
     text-align: center;
     padding: 10px;
 }
@@ -278,12 +279,226 @@ nav a:hover{
 .skills .react {
     background-color: var(--color-neutral);
     width: 5%;
-    border-radius: 10px;
+    border-radius: var(--border-radius-2);
     text-align: center;
     padding: 10px;
 }
 
+.skills .java {
+    background-color: var(--color-neutral);
+    width: 15%;
+    border-radius: var(--border-radius-2);
+    text-align: center;
+    padding: 10px;
+}
 
+/* services section  */
+.services{
+    padding-top: 120px;
+}
+
+.services-container{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services h2{
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.services span{
+    color: var(--color-success);
+}
+
+.services-container .info{
+    border-right: 2px solid black;
+     border-bottom: 2px solid black;
+    border-radius: var(--border-radius-1);
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.services .info span{
+    font-size: 3.2rem;
+}
+
+.info h3{
+    font-size: 1.8rem;
+}
+
+.info p{
+    font-size: 1.2rem;
+    padding: 3px;
+}
+
+.info button{
+    background:var(--btn-color) ;
+    color: var(--color-white);
+    font-size: 1rem;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: var(--border-radius-2);
+}
+
+/* portfolio section css  */
+.portfolio{
+    padding-top: 120px;
+    margin: 10px;
+}
+
+.portfolio h2{
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.portfolio span{
+    color: var(--color-success);
+}
+
+.portfolio .portfolio-info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.portfolio-info .portfolio-content{
+    position: relative;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.portfolio-content img{
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+}
+
+.portfolio-content img:hover{
+    transform: scale(1.1);
+}
+
+.portfolio-content .layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,.1),var(--btn-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0.4rem;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.portfolio-content:hover .layer{
+    opacity: 1;
+}
+
+.layer h3{
+    font-size: 2.2rem;
+    color: var(--color-white);
+    background: none;
+}
+
+.layer p{
+    font-size: 1.2rem;
+    color: var(--color-white);
+    margin: .3rem 0 1rem;
+    background: none;
+}
+
+/* testimonial section  */
+
+.testimonial-container{
+    margin-right: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 110%;
+    padding: .5rem .1rem;
+}
+
+.testimonial-container span{
+    color: var(--color-success);
+}
+
+.testimonial-container .testimonial-wrapper{
+    position: relative;
+    max-width: 60rem;
+    width: 100%;
+    padding: 5rem;
+}
+
+.testimonial-wrapper .testimonial-box{
+    padding: .1rem;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.testimonial-container .testimonial-slide{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--background-color);
+    border-radius: 25px;
+    box-shadow: 0 .1rem .5rem var(--shadow-color);
+    padding: .3rem .5rem;
+    border-bottom: 0.8rem solid var(--shadow-color) ;
+    border-right: 0.3rem solid var(--shadow-color) ;
+}
+
+.testimonial-slide img{
+    width: 14rem;
+    height: 14rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: .5rem solid var(--background-color);
+    outline:.5rem solid  var(--color-success);
+}
+
+.testimonial-slide h3{
+    font-size: 2.5rem;
+    margin: 2rem 0;
+}
+
+.testimonial-slide p{
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.testimonial-box .swiper-button-next,
+.testimonial-box .swiper-button-prev{
+    color: var(--btn-color);
+}
+
+.testimonial-box .swiper-button-next{
+    right: 0;
+}
+
+.testimonial-box .swiper-button-prev{
+    left: 0;
+}
+
+.testimonial-box .swiper-pagination-bullet{
+    background: rgba(0, 0, 0, .8);
+}
+
+.testimonial-box .swiper-pagination-bullet-active{
+    background: var(--btn-color);
+}
 /* footer */
 .emoji {
     font-family: 'Noto Color Emoji', sans-serif;
