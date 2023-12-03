@@ -13,7 +13,7 @@
 }
 
 :root{
-    --background-color:#E0E1DF;
+    --background-color: ##E0E1DF;
     --text-color:#1A2238;
     --color-success:#259B9A;
     --color-danger:#5E0E0E;
@@ -33,7 +33,8 @@
     --background-color:#181817;
     --text-color:#e0e1df;
     --color-white:#323f4b;
-    --shadow-color:#D2CFC2;
+    --shadow-color:#202020;
+    --color-neutral:#181817;
 }
 
 html{
@@ -42,15 +43,16 @@ html{
 }
 
 body{
-   background: var(--background-color);
+    font-family: 'Poppins' sans-serif;
+    justify-content: center;
+    position: relative;
+    background: var(--background-color);
     color: var(--text-color);
 }
-
 /* navbar css */
 .navbar{
     width: 1255px;
     position: fixed;
-    
 }
 
 .navbar .logo{
@@ -115,7 +117,7 @@ nav a:hover{
 
 #home{
     display: grid;
-    background: var(--bg-color);
+    background: transparent;
 }
 
 .home{
@@ -152,7 +154,7 @@ nav a:hover{
     background: transparent;
     border: 0.2rem solid var(--shadow-color);
     border-radius: 50%;
-    box-shadow: 0.2rem 0.5rem var(--shadow-color);
+    box-shadow: 0.2rem 0.3rem var(--shadow-color);
     font-size: 2rem;
     color: var(--btn-color);
     margin: 2.5rem 1.5rem 3rem 0;
@@ -170,8 +172,9 @@ nav a:hover{
 }
 
 .button{
-    display: inline-block;
+    display: flex;
     padding: 1.2rem 2.8rem;
+    margin: 15px;
     background: var(--color-neutral);
     color: var(--white-color);
     border-radius: 25px;
@@ -210,6 +213,7 @@ nav a:hover{
 .about h2{
     font-size: 2.2rem;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .about span{
@@ -235,6 +239,7 @@ nav a:hover{
 
 .skills{
     display: flex;
+    padding-left: 10rem;
     flex-direction: column;
 }
 
@@ -291,7 +296,7 @@ nav a:hover{
 }
 
 .skills .react {
-    background-color: var(--color-neutral);
+    background-color:#5F9EA0;
     width: 5%;
     border-radius: var(--border-radius-2);
     text-align: center;
@@ -299,7 +304,7 @@ nav a:hover{
 }
 
 .skills .java {
-    background-color: var(--color-neutral);
+    background-color: #5F9EA0;
     width: 15%;
     border-radius: var(--border-radius-2);
     text-align: center;
@@ -608,7 +613,17 @@ form .textarea-field .error-txt{
 
 
 /* footer */
+footer .footer-text{
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.footer-iconTop a {
+    padding-left: 1100px;
+    margin-top: -20px;
+}
 .emoji {
     font-family: 'Noto Color Emoji', sans-serif;
-    font-size: 1.5em; 
+    font-size: 1.5em;
+    color: orange; 
 }
