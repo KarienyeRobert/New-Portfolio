@@ -703,6 +703,16 @@ footer .footer-text{
         font-size: 40%;
     }
 
+    .home .home-content{
+        margin-left: 70px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #darkMode-icon{
+        font-size: 6rem;
+    }
+
     .navbar{
         width: 480px;
     }
