@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Noto+Color+Emoji&family=Oswald:wght@200&family=Playfair+Display:wght@400;500&family=Poppins:wght@300;400;500;600;700;800&family=Satisfy&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lobster&family=Noto+Color+Emoji&family=Oswald:wght@200&family=Playfair+Display:wght@400;500&family=Poppins:wght@300;400;500;600;700;800&family=Satisfy&display=swap');
 
 *{
     margin: 0;
@@ -22,7 +21,7 @@
     --btn-color:#161F6D;
     --color-dark:#111;
     --shadow-color:#93928D;
-    --bg-color:#F7F7F7;
+    --bg-color:#F8F8F9;
 
     --border-radius-1:10px;
     --border-radius-2:25px;
@@ -32,6 +31,7 @@
 .dark-mode{
     --background-color:#181817;
     --text-color:#e0e1df;
+    --bg-color:#161617;
     --color-white:#323f4b;
     --shadow-color:#202020;
     --color-neutral:#181817;
@@ -43,7 +43,7 @@ html{
 }
 
 body{
-    font-family: 'Poppins' sans-serif;
+    font-family:'Playfair Display';
     justify-content: center;
     position: relative;
     background: var(--background-color);
@@ -53,6 +53,7 @@ body{
 .navbar{
     width: 1255px;
     position: fixed;
+    background-color: var(--bg-color);
 }
 
 .navbar .logo{
@@ -61,7 +62,6 @@ body{
     font-weight: 600;
     cursor: default;
     margin-right: auto;
-    bottom: 0;
 }
 
 .navbar .logo img{
@@ -125,6 +125,13 @@ nav a:hover{
     
 }
 
+.home .home-box{
+    border: 2px solid var(--bg-color);
+    border-radius: 25px;
+    background: var(--bg-color);
+    padding: 10px;
+} 
+
 
 .home .home-content{
     padding: 170px 5px 0 25px;
@@ -138,10 +145,12 @@ nav a:hover{
 .home-content h1{
     font-size: 2.8rem;
     font-weight: 700;
+    font-family: 'Playfair Display', cursive;
 }
 
 .home-content p{
     font-size: 1.6rem;
+    font-family: 'Oswald', sans-serif;
 }
 
 
@@ -196,11 +205,16 @@ nav a:hover{
     color: var(--color-success);
 }
 
+
+.home-img{
+    position: absolute;
+    margin-left: 750px;
+    margin-top: -400px;
+}
+
 .home-img img{
-    height: 20rem;
-    width: 20rem;
-    margin-left: 850px;
-    margin-top: -1150px;
+    height: 25rem;
+    width: 25rem;
     border-radius: 50%;
 }
 
@@ -234,7 +248,16 @@ nav a:hover{
 
 .about p{
     font-size: 1.6rem;
+    font-family: 'Oswald', sans-serif;
+}
 
+.skill-bar{
+    border: 2px solid var(--bg-color);
+    background: var(--bg-color);
+    border-radius: 25px;
+    margin-left: 350px;
+    margin-right: 200px;
+    padding: 10px 0;
 }
 
 .skills{
@@ -451,6 +474,10 @@ nav a:hover{
     margin-bottom: 50px;
 }
 
+.testimonial-container h2{
+    font-size: 2.2rem;
+    text-align: center;
+}
 .testimonial-container span{
     color: var(--color-success);
 }
@@ -626,4 +653,65 @@ footer .footer-text{
     font-family: 'Noto Color Emoji', sans-serif;
     font-size: 1.5em;
     color: orange; 
+}
+
+/* media break-points  */
+
+@media(max-width:1024px){
+    html{
+        font-size: 65%;
+    }
+    .navbar{
+        width: 1024px;
+    }
+    .home-img{
+        margin-left: 550px;
+    }
+}
+
+@media(max-width:767px){
+    html{
+        font-size: 55%;
+    }
+
+    .navbar{
+        width: 767px;
+    }
+
+    .home-img{
+        margin-left: 420px;
+        margin-top: -300px;
+    }
+
+    .about-container{
+        max-width: 767px;
+    }
+
+    .skills .box{
+        width: 200px;
+        padding-right: 40px;
+        padding-left: -40px;
+    }
+
+    .skill-bar{
+        margin-right: 60px;
+    }
+}
+
+@media(max-width:480px){
+    html{
+        font-size: 40%;
+    }
+
+    .navbar{
+        width: 480px;
+    }
+
+    .home-img{
+        display: none;
+    }
+
+    .about img{
+        display: none;
+    }
 }
