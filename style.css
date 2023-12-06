@@ -337,21 +337,23 @@ nav a:hover{
 /* services section  */
 .services{
     padding-top: 120px;
-    display: flex;
 }
 
 .services-container{
     align-items: center;
     justify-content: center;
+    display: flex;
+
 }
 
-#services h2{
+.services h2{
     font-size: 2.2rem;
     text-align: center;
     padding-top: 120px;
+
 }
 
-#services span{
+.services span{
     color: var(--color-success);
 }
 
