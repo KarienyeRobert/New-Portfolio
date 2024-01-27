@@ -210,6 +210,7 @@ nav a:hover{
     position: absolute;
     margin-left: 750px;
     margin-top: -400px;
+    z-index: -1;
 }
 
 .home-img img{
@@ -244,6 +245,7 @@ nav a:hover{
     width: 7cm;
     border-radius: 50%;
     padding: 0 10px 5px 0;
+    z-index: -1;
 }
 
 .about p{
@@ -395,6 +397,7 @@ nav a:hover{
 .portfolio{
     padding-top: 120px;
     margin: 10px;
+    
 }
 
 .portfolio h2{
@@ -425,6 +428,7 @@ nav a:hover{
     width: 100%;
     height: auto;
     transition: .5s ease;
+    z-index: -100;
 }
 
 .portfolio-content img:hover{
@@ -490,6 +494,7 @@ nav a:hover{
     max-width: 60rem;
     width: 100%;
     padding: 5rem;
+    z-index: -1;
 }
 
 .testimonial-wrapper .testimonial-box{
@@ -517,6 +522,7 @@ nav a:hover{
     border-radius: 50%;
     border: .5rem solid var(--background-color);
     outline:.5rem solid  var(--color-success);
+    z-index: -100;
 }
 
 .testimonial-slide h3{
