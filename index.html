@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- swiper css  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+     
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.min.css"> -->
 </head>
 <body>
     <div class="navbar">
@@ -24,6 +28,8 @@
             <a href="#services">Services</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact</a>
+            <div class="bx bx-moon" id="darkMode-icon"></div>
+            <div class="bx bx-menu" id="menu-icon"></div>
         </nav>
     </div>
 
@@ -31,7 +37,9 @@
 
     <section id="home">
         <div class="home">
-            <div class="home-content">
+            <div class="container">
+                <div class="home-content">
+                   <div class="home-box">
                     <h3>Hello, Iam</h3>
                     <h1>ROBERT KARIENYE</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rerum dolores quas assumenda soluta officia id, laudantium facilis unde, harum dignissimos expedita impedit molestias fugiat! Dignissimos perferendis suscipit beatae necessitatibus.</p>
@@ -42,12 +50,17 @@
                         <a href="https://twitter.com/karienye_robert"><i class='bx bxl-twitter'></i></a>
                         <a href="https://www.tiktok.com/@whalllllllll"><i class='bx bxl-tiktok' ></i></a>
                         <a href="https://www.linkedin.com/in/robert-karienye-8a4aa1242/"><i class='bx bxl-linkedin' ></i></a>
-                        
-
-                        <img src="img/home-pic.jpg">
-                    </div>  
+                        <a href="https://github.com/KarienyeRobert"><i class='bx bxl-github' ></i></a>
+                    </div> 
+                    
                     <button class="button"><a href="#contact">Hire Me</a></button>
-                        <button class="btn"><a href="#">Download CV</a></button>               
+                    <button class="button"><a href="cv.html">Download CV</a></button> 
+                   </div>
+                   <div class="home-img">
+                    <img src="img/home-pic.jpg">  
+                   </div> 
+                </div>
+            </div>            
         </div>
     </section>
 
@@ -61,17 +74,19 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nihil, ratione, laborum atque provident, dicta inventore blanditiis magni id reprehenderit iste illo voluptate nostrum tempore vel mollitia quisquam corrupti dolorum.</p>
             </div>
 <!-- skill bar -->
+           <div class="skill-bar">
             <div class="skills">
                 <div class="box">
                     <div class="html">
                         <h4>HTML</h4>
                         <span>80%</span>
                     </div>
+                    
                 </div>
                <div class="box">
                 <div class="css">
                     <h4>CSS</h4>
-                    <span>50%</span>
+                    <span>70%</span>
                 </div>
                </div>
                 <div class="box">
@@ -88,119 +103,210 @@
                </div>
                 <div class="box">
                     <div class="react">
-                        <h4>React JS</h4>
+                        <h4>ReactJS</h4>
                         <span>5%</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="java">
+                        <h4>Java</h4>
+                        <span>15%</span>
                     </div>
                 </div>
             </div>
 
+           </div>
 
         </div>
      </section>
 
     <!-- services section  -->
     <section id="services">
+        <div class="services">
+        <h2>Services <span>Offered!!</span></h2>
         <div class="services-container">
-            <h2>Services <span>Offered!!</span></h2>
            <div class="info">
             <span class="material-icons-sharp">
                 code
               </span>
-            <h2>Web Development</h2>
+            <h3>Web Development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates doloribus enim, omnis dolores accusamus asperiores alias molestiae dolor quam vero blanditiis veniam nesciunt dolore provident labore itaque totam in porro!</p>
             <button>Learn More</button>
            </div>
 
            <div class="info">
             <span class="material-icons-sharp">
-                code
+                analytics
               </span>
-            <h2>Web Development</h2>
+            <h3>Analysis</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti recusandae, aspernatur nisi doloribus dignissimos itaque fugit dolor illum saepe! Necessitatibus perferendis praesentium ut exercitationem. Minima sunt quas odit veritatis voluptas?</p>
             <button>Learn More</button>
            </div>
 
            <div class="info">
             <span class="material-icons-sharp">
-                code
+                brush
               </span>
-            <h2>Web Development</h2>
+            <h3>Editing</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque eligendi dolorum odio cumque ad consequatur nihil voluptate obcaecati esse labore reprehenderit deleniti, nostrum delectus sed aliquam facilis! Distinctio, saepe modi.</p>
             <button>Learn More</button>
            </div>
 
            <div class="info">
             <span class="material-icons-sharp">
-                code
+                devices
               </span>
-            <h2>Web Development</h2>
+            <h3>Mobile Apps</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, blanditiis vero, facilis molestiae, eius eum consequatur quisquam aut laboriosam laudantium unde provident est quo dolorum eaque illum cumque quod expedita.</p>
             <button>Learn More</button>
            </div>
+        </div>
         </div>
     </section>
 
     <!-- portfolio section  -->
     <section id="portfolio">
         <div class="portfolio">
-            <div class="content">
-                <img src="img/testimonial.jpg">
-                <h3>Project 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit odio, cum impedit consequuntur itaque voluptates qui eius ipsa quaerat dolorem expedita iusto laboriosam maiores accusamus nam nulla vel dicta aliquid.</p>
+            <h2>My <span>Portfolio!!</span></h2>
+            <div class="portfolio-info">
+                <div class="portfolio-content">
+                    <img src="img/testimonial.jpg">
+                    <div class="layer">
+                    <h3>Project 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit odio, cum impedit consequuntur itaque voluptates qui eius ipsa quaerat dolorem expedita iusto laboriosam maiores accusamus nam nulla vel dicta aliquid.</p>
+                </div>
+                </div>
+    
+                <div class="portfolio-content">
+                    <img src="img/testimonial.jpg">
+                    <div class="layer">
+                        <h3>Project 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit odio, cum impedit consequuntur itaque voluptates qui eius ipsa quaerat dolorem expedita iusto laboriosam maiores accusamus nam nulla vel dicta aliquid.</p>
+                    </div>
+                </div>
+    
+                <div class="portfolio-content">
+                    <img src="img/testimonial.jpg">
+                    <div class="layer">
+                        <h3>Project 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit odio, cum impedit consequuntur itaque voluptates qui eius ipsa quaerat dolorem expedita iusto laboriosam maiores accusamus nam nulla vel dicta aliquid.</p>
+                    </div>
+                </div>
+    
+                <div class="portfolio-content">
+                    <img src="img/testimonial.jpg">
+                    <div class="layer">
+                        <h3>Project 4</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit odio, cum impedit consequuntur itaque voluptates qui eius ipsa quaerat dolorem expedita iusto laboriosam maiores accusamus nam nulla vel dicta aliquid.</p>
+                    </div>
+                </div>
+    
+                <div class="portfolio-content">
+                    <img src="img/testimonial.jpg">
+                    <div class="layer">
+                        <h3>Project 5</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit odio, cum impedit consequuntur itaque voluptates qui eius ipsa quaerat dolorem expedita iusto laboriosam maiores accusamus nam nulla vel dicta aliquid.</p>
+                    </div>
+                </div>
+    
+                <div class="portfolio-content">
+                    <img src="img/testimonial.jpg">
+                    <div class="layer">
+                        <h3>Project 6</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit odio, cum impedit consequuntur itaque voluptates qui eius ipsa quaerat dolorem expedita iusto laboriosam maiores accusamus nam nulla vel dicta aliquid.</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="content">
-                <img src="img/testimonial.jpg">
-                <h3>Project 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit odio, cum impedit consequuntur itaque voluptates qui eius ipsa quaerat dolorem expedita iusto laboriosam maiores accusamus nam nulla vel dicta aliquid.</p>
-            </div>
+            <!-- testimonials -->
+           
+        </div>
 
-            <div class="content">
-                <img src="img/testimonial.jpg">
-                <h3>Project 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit odio, cum impedit consequuntur itaque voluptates qui eius ipsa quaerat dolorem expedita iusto laboriosam maiores accusamus nam nulla vel dicta aliquid.</p>
-            </div>
-
-            <div class="content">
-                <img src="img/testimonial.jpg">
-                <h3>Project 4</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit odio, cum impedit consequuntur itaque voluptates qui eius ipsa quaerat dolorem expedita iusto laboriosam maiores accusamus nam nulla vel dicta aliquid.</p>
-            </div>
-
-            <div class="content">
-                <img src="img/testimonial.jpg">
-                <h3>Project 5</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit odio, cum impedit consequuntur itaque voluptates qui eius ipsa quaerat dolorem expedita iusto laboriosam maiores accusamus nam nulla vel dicta aliquid.</p>
-            </div>
-
-            <div class="content">
-                <img src="img/testimonial.jpg">
-                <h3>Project 6</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit odio, cum impedit consequuntur itaque voluptates qui eius ipsa quaerat dolorem expedita iusto laboriosam maiores accusamus nam nulla vel dicta aliquid.</p>
+        <!-- testimonial section  -->
+        <div class="testimonial-container">
+            <h2 class="heading">Valuable <span>Testimonial</span></h2>
+    
+            <div class="testimonial-wrapper">
+                <div class="testimonial-box mySwiper" >
+                    <div class="testimonial-content swiper-wrapper">
+                        <div class="testimonial-slide swiper-slide">
+                            <img src="img/testimony.jpg" >
+                            <h3>Jessica Pearson</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non neque mollitia atque sequi obcaecati illum tempora ipsum delectus, enim, fugit deleniti fugiat accusamus adipisci repudiandae perspiciatis vero ratione beatae perferendis id et at laboriosam dolores. Labore consectetur mollitia nisi doloremque consequatur perspiciatis incidunt blanditiis dicta vero, illo quos eum voluptatem placeat odit id magni consequuntur quas nulla atque aliquam distinctio.</p>
+                        </div>
+    
+                        <div class="testimonial-slide swiper-slide">
+                            <img src="img/testimony.jpg" >
+                            <h3>Mike Ross</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non neque mollitia atque sequi obcaecati illum tempora ipsum delectus, enim, fugit deleniti fugiat accusamus adipisci repudiandae perspiciatis vero ratione beatae perferendis id et at laboriosam dolores. Labore consectetur mollitia nisi doloremque consequatur perspiciatis incidunt blanditiis dicta vero, illo quos eum voluptatem placeat odit id magni consequuntur quas nulla atque aliquam distinctio.</p>
+                        </div>
+    
+                        <div class="testimonial-slide swiper-slide">
+                            <img src="img/testimony.jpg" >
+                            <h3>Harvey Specter</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non neque mollitia atque sequi obcaecati illum tempora ipsum delectus, enim, fugit deleniti fugiat accusamus adipisci repudiandae perspiciatis vero ratione beatae perferendis id et at laboriosam dolores. Labore consectetur mollitia nisi doloremque consequatur perspiciatis incidunt blanditiis dicta vero, illo quos eum voluptatem placeat odit id magni consequuntur quas nulla atque aliquam distinctio.</p>
+                        </div>
+    
+                        <div class="testimonial-slide swiper-slide">
+                            <img src="img/testimony.jpg" >
+                            <h3>Rachel Zane</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non neque mollitia atque sequi obcaecati illum tempora ipsum delectus, enim, fugit deleniti fugiat accusamus adipisci repudiandae perspiciatis vero ratione beatae perferendis id et at laboriosam dolores. Labore consectetur mollitia nisi doloremque consequatur perspiciatis incidunt blanditiis dicta vero, illo quos eum voluptatem placeat odit id magni consequuntur quas nulla atque aliquam distinctio.</p>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </div>
+    
     </section>
 
-    <!-- contact section  -->
+
+    <!--contact section-->
 
     <section id="contact">
-        <div class="contact-container">
-            <div class="contact-info">
-             <form action="#">
-                <input type="text" placeholder="Full Name">
-                <input type="tel" placeholder="Phone Number">
+     <h2>Contact <span>Me!! &#x1F5EA</span></h2>
+      <div class="contact">
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="on">
+                    <div class="error-txt">Full Name can't be blank!!</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Email Address " id="email" class="item"autocomplete="on">
+                    <div class="error-txt email">Email Address can't be blank!!</div>
+                </div>
             </div>
-            <div class="contact-info">
-                <input type="email" placeholder="Email Adress">
-                <input type="text" placeholder="Email Subject">
+
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="tel" placeholder="Phone Number " id="phone" class="item" autocomplete="on">
+                    <div class="error-txt">Phone Number can't be blank!!</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Subject " id="subject" class="item" autocomplete="on">
+                    <div class="error-txt">Subject can't be blank!!</div>
+                </div>
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
-             </form>
-        </div>
+
+            <div class="textarea-field field">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item"></textarea>
+                <div class="error-txt">Message can't be blank!!</div>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+      </div>
     </section>
+
 
     <!-- footer section  -->
 
     <footer class="footer">
         <div class="footer-text">
-            <p><span class="emoji">&#x1F540;</span>
+            <p><span class="emoji">&#x1F394;</span>
                 Copyright &copy; 2023 by Karienye |All Rights Reserved</p>
         </div>
         <div class="footer-iconTop">
@@ -212,7 +318,19 @@
         </div>
     </footer>
 
+
+    <!-- smtp js  -->
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+    <!-- sweetalert2 js for success message popup -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+     <!--swiper js-->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="https://unpkg.com/scrollreveal"></script>
     <!--Js files-->
-    <script src="index.js"></script>
+<script src="index.js"></script>
+
 </body>
 </html>
